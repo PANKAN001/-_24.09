@@ -39,16 +39,6 @@ namespace Barh_Holms_RMS
             var myList_HL = Read_Hist_Log.ToList();
             var myList_HTF = Read_Hist_TF.ToList();
 
-            /// Удоляем данные заказа
-            myList_HD.Sort();
-            myList_HL.Sort();
-            myList_HTF.Sort();
-
-            /// Переводим списки в массивы
-            string[] Read_Hist_Data_S = myList_HD.ToArray();
-            string[] Read_Hist_Log_S = myList_HL.ToArray();
-            string[] Read_Hist_TF_S = myList_HTF.ToArray();
-
             /// Проверка входных данных продавцов
             for (int i = 0; i < Read_Hist_Data.Length; i += 1)
             {
