@@ -1,0 +1,34 @@
+﻿<Page x:Class="Barh_Holms_RMS.Admins"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Barh_Holms_RMS"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Admins">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Image HorizontalAlignment="Center" VerticalAlignment="Center" Panel.ZIndex="2" Name="Foto"/>
+        <Label Grid.Column="1" Grid.Row="0" Content="Фамилия:" Margin="50,0,0,0" FontSize="24" FontFamily="Comic Sans MS"/>
+        <Label Grid.Column="1" Grid.Row="0" Content="" Margin="170,0,0,0" FontSize="24" FontFamily="Comic Sans MS" Name="Surname"/>
+        <Label Grid.Column="1" Grid.Row="0" Content="Имя:" Margin="50,40,0,0" FontSize="24" FontFamily="Comic Sans MS"/>
+        <Label Grid.Column="1" Grid.Row="0" Content="" Margin="114,40,0,0" FontSize="24" FontFamily="Comic Sans MS" Name="Name"/>
+        <Label Grid.Column="1" Grid.Row="0" Content="Должность:" Margin="50,80,0,0" FontSize="24" FontFamily="Comic Sans MS"/>
+        <Label Grid.Column="1" Grid.Row="0" Content="" Margin="200,80,0,0" FontSize="24" FontFamily="Comic Sans MS" Name="Post"/>
+        <Button Grid.Column="1" Grid.Row="1" Width="500" Height="50" Content="Сформировать отчёты" FontSize="28" FontFamily="Comic Sans MS" BorderBrush="#FF498C51" Background="#FF76E383" BorderThickness="2" Name="But_Form_Otch"  VerticalAlignment="Center" HorizontalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Click="But_Click_Form_Otch"/>
+        <Button Grid.Column="1" Grid.Row="2" Width="500" Height="50" Content="История входов" FontSize="28" FontFamily="Comic Sans MS" BorderBrush="#FF498C51" Background="#FF76E383" BorderThickness="2" Name="But_Hustory_Vhod"  VerticalAlignment="Center" HorizontalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Click="But_Click_Hustory_Vhod"/>
+        <Button Grid.Column="1" Grid.Row="3" Width="500" Height="50" Content="Расходные материалы" FontSize="28" FontFamily="Comic Sans MS" BorderBrush="#FF498C51" Background="#FF76E383" BorderThickness="2" Name="But_Rash_Mat"  VerticalAlignment="Center" HorizontalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Click="But_Click_Rash_Mat"/>
+
+    </Grid>
+</Page>

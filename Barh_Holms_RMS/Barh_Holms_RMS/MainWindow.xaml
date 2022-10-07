@@ -1,0 +1,23 @@
+﻿<Window x:Class="Barh_Holms_RMS.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Barh_Holms_RMS"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="560" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="8*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Background="#FF76E383" Panel.ZIndex="-4"></Grid>
+        <Grid Background="#FF498C51" Grid.Row="2"></Grid>
+        <Label Grid.Row="0" Content="Бархотные холмы" FontSize="36" FontFamily="Comic Sans MS" VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
+        <Frame NavigationUIVisibility="Hidden" ContentRendered="Ubrat" Grid.Row="1" Name="MainFrame"></Frame>
+        <Button x:Name="Button_back" Grid.Row="0" Width="100" Height="30" HorizontalAlignment="Right" Margin="0 0 20 0" Content="Назад" FontSize="20" FontFamily="Comic Sans MS" BorderBrush="#FF498C51" Background="#FF76E383" BorderThickness="2" Click="Btn_Back_Click"></Button>
+        <TextBlock Name="tbTime" HorizontalAlignment="Left" Margin="50 30 0 30" FontFamily="Comic Sans MS" FontSize="28"/>
+
+    </Grid>
+</Window>
